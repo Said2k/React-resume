@@ -3,11 +3,11 @@ import { Route, Routes } from 'react-router-dom';
 import Home from '../Home/Home';
 import InfoApp from '../Info/InfoApp';
 
-const MainRouter = () => {
+const MainRouter = ({state, colInfo}) => {
     return (
         <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='information' element={<InfoApp/>}/>
+            <Route path='/' element={<Home state={state}/>}/>
+            <Route path='information' element={<InfoApp colInfo={colInfo}/>}/>
            
            </Routes> 
             );

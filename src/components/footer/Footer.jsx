@@ -8,8 +8,8 @@ const Footer = () => {
        
             <p>Footer &copy; SAID</p> 
        <div className='block__footer-web'>
-            <a href="https://www.instagram.com/lans_sd/"><img src="https://download.logo.wine/logo/Instagram/Instagram-Logo.wine.png" width={"100px"} height={"70px"} alt=""  /></a>
-            <a href="https://web.telegram.org/k/#@SoBoring"><img src="https://1000logos.net/wp-content/uploads/2021/04/Telegram-logo.png" width={"100px"} height={"60px"} alt="" /></a>
+            <a  href="https://www.instagram.com/lans_sd/"><img className='insta'  src="https://download.logo.wine/logo/Instagram/Instagram-Logo.wine.png"  alt=""  /></a>
+            <a  href="https://web.telegram.org/k/#@SoBoring"><img className='telega' src="https://1000logos.net/wp-content/uploads/2021/04/Telegram-logo.png"  alt="" /></a>
             </div>
         </div>
     );

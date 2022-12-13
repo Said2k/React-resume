@@ -19,3 +19,35 @@
     align-items: flex-end;
     padding-bottom: 10px;
 }
+.insta {
+    width: 100px;
+    height: 70px;
+}
+.telega {
+    width: 100px;
+    height: 60px;
+}
+
+.insta:hover{
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+.telega:hover{
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+
+@media all and (max-width:426px){
+    .block__footer p{
+        font-size: 18px;
+    }
+    .insta {
+        width: 80px;
+        height: 50px;
+    }
+    .telega {
+        width: 80px;
+        height: 40px;
+    }
+}

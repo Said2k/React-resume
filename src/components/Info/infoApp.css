@@ -4,10 +4,12 @@
     position: absolute;
 }
 h1 {
-    margin-top: 50px;
+    margin: 80px 0 80px 0;
     text-align: center;
+
 }
 .block__info-study p {
+    width: 60%;
     padding: 50px;
     margin-top: 60px;
     font-size: 23px;
@@ -18,8 +20,35 @@ h1 {
     width: 80%;
     display: flex;
     align-items: center;
+    padding-bottom: 50px    ;
     
 
+}
+.photo{
+   
+    width: 300px;
+    height: 400px;
+    background-image: url(./зара-removebg-preview.png);
+    background-position: center;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    
+}
+.photo__2{
+    width: 350px;
+    height: 450px;
+    background-image: url(./last.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.photo:hover{
+    width: 330px;
+    transition: 0.5s;
+}
+.photo__2:hover{
+    background-size: 109%;
+    transition: 0.5s;
 }
 .block__info-story{
     background-color: rgb(112, 34, 34);
@@ -32,12 +61,15 @@ h1 {
 }
 .block__info-story p {
     width: 70%;
+    margin-bottom: 50px;
 }
 .jordan {
     border-radius: 50%;
     border: 1px solid black;
     background-image: url(https://media.gettyimages.com/id/1551140/photo/michael-jordan-of-the-chicago-bulls-poses-for-a-portrait-in-chicago-illinois-note-to-user-user.jpg?s=612x612&w=gi&k=20&c=ceMbmmX0ShA76CmpvmWo1zOScjVMV3yTJyrF7yYAm_w=);
     background-size: 100%;
+    background-repeat: no-repeat;
+
     width: 250px;
     height: 250px;
 
@@ -48,6 +80,8 @@ h1 {
     background-image: url(./Снимок\ экрана\ 2022-12-13\ 203736.png);
     background-size: 100%;
     background-position: center;
+    background-repeat: no-repeat;
+
     width: 250px;
     height: 250px;
 
@@ -68,6 +102,18 @@ h1 {
     justify-content: space-evenly;
     width: 100%;
 }
+.jordan:hover{
+    transition: 0.5s;
+    box-shadow: 0px 0px 20px 8px rgb(221, 221, 221);
+}
+.koby:hover{
+    box-shadow: 0px 0px 20px 8px rgb(221, 221, 221);
+    transition: 0.5s;
+}
+.goat:hover{
+    box-shadow: 0px 0px 20px 8px rgb(221, 221, 221);
+    transition: 0.5s;
+}
 
 .block__info-last{
   text-align: center;
@@ -87,4 +133,87 @@ h1 {
 .block__info-last li {
     width: 100px;
     padding-bottom: 30px;
+}
+
+
+
+@media all and (max-width:769px){
+    .block__info-study p{
+        font-size: 18px;
+    }
+    .goat{
+        width: 200px;
+        height: 200px;
+    }
+    .koby{
+        width: 200px;
+        height: 200px;
+    }
+    .jordan{
+        width: 200px;
+        height: 200px;
+
+    }
+    @media all and (max-width:426px){
+        h1 {
+            font-size: 22px;
+        }
+        .block__info-study{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+     
+        .photo__2{
+            margin-left: 25px;
+        }
+        .block__info-study p{
+            font-size: 16px;
+            width: 100%;
+        }
+        .block__info-story p {
+            font-size: 13px;
+        }
+        .goat{
+            width: 100px;
+            height: 100px;
+        }
+        .koby{
+            width: 100px;
+            height: 100px;
+        }
+        .jordan{
+            width: 100px;
+            height: 100px;
+    
+        }
+        .block__info-last{
+            font-size: 7px;
+        }
+        .block__info-last ul{
+            padding: 0;
+        }
+    }
+    @media all and (max-width:321px){
+        .block__info-study{
+            width: 100%;
+        }
+        .block__info-study p{
+            font-size: 13px;
+            width: 100%;
+        }
+        .photo{
+        width: 200px;
+            height: 300px;
+    }
+        .photo__2{
+            margin-left: 25px;
+            width: 250px;
+            height: 350px;
+        }
+        .block__info-last{
+        
+            font-size: 5px;
+        }
+    }
 }

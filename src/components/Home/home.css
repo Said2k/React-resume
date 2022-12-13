@@ -7,10 +7,10 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-image: url(./abstract-uv-ultraviolet-light-composition.jpg);
+
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 110%;
+    background-size: 130%;
 }
 .block-about{
     display: flex;
@@ -22,21 +22,25 @@
     margin-top: 100px;
     position: absolute;
 
-    /* border: 1px solid black; */
-    /* background-color: #fff;
-    box-shadow: 0 5px 5px 5px gray;  */
+
 
 }
 
 .block__name {
     display: flex;
     justify-content: center;
+    align-items: center;
 border-radius: 20px;
 width: 50%;
 background-color: #fff;
-box-shadow: 0 5px 5px 5px gray;
-font-size: 35px; 
-font-weight: 500;
+/* box-shadow: 0 5px 5px 5px gray; */
+font-size: 34px; 
+font-weight: 400;
+
+}
+.block__name:hover {
+    box-shadow: 0 0 10px 5px rgb(161, 161, 161) ;
+    transition: 0.5s;
 
 }
 .block__photo{
@@ -59,17 +63,27 @@ font-weight: 500;
    
 
 }
+.block__photo img:hover{
+    box-shadow: 0 0 10px 8px rgb(57, 57, 57) ;
+    transition: 0.5s;
+
+
+}
 .block__info{
     margin-top: 30px;
     padding: 20px 0;
     /* display: flex;
     justify-content: center; */
-    border-radius: 20px;
+    border-radius: 60%;
     width: 30%;
     height: 80%;
     background-color: #fff;
     box-shadow: 0 5px 5px 5px gray; 
   
+}
+.block__info:hover {
+    border-radius: 20px;
+    transition: 0.5s;
 }
 .block__info div {
     display: flex;
@@ -88,3 +102,99 @@ font-weight: 500;
 
 }
 
+
+
+@media all and (max-width:1025px){
+    .block{
+        background-size: 180%;
+    }
+}
+
+
+
+
+
+
+
+@media all and (max-width:769px){
+    .block{
+        background-size: 220%;
+    }
+    .block__photo{
+        width: 70%;
+        height: 300px;
+    }
+    .block__name p {
+        font-size: 20px;
+    }
+    .block__photo img{
+        width: 30%;
+        height: 200px;
+    }
+    .block__info{
+        width: 43%;
+        height: 60%;
+    }
+    .block__info div {
+       font-size: 10px;
+       margin: 0;
+      
+    }
+    .block__info p {
+        font-size: 10px;
+    }
+    .block__info span {
+    font-size: 10px;
+    }
+}
+
+@media all and (max-width:426px){
+    .block__photo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+    }
+    .block__info{
+        width: 70%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       height: 40%;
+    }
+    .block__photo img{
+        width: 40%;
+        height: 180px;
+    }
+    .block{
+        background-size: 450%;
+    }
+   
+     .block__info p {
+         font-size: 10px;
+     }
+     .block__info span {
+     font-size: 7px;
+     }
+     .block__name p {
+        font-size: 15px;
+    }
+}
+@media all and (max-width:321px){
+    .block__photo{
+        height: 300px;
+    }
+    .block__photo img{
+       display: none;
+    }
+    .block__info{
+       
+        height: 60%;
+    }
+    .block{
+        background-size: 530%;
+    }
+    .block__name p{
+        font-size: 13px;
+    }
+}

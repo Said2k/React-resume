@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../Home/home.css'
 import me from '../Home/photo_2022-10-12_12-09-49.jpg'
+import white from '../Home/abstract-smooth-empty-grey-studio-well-use-as-background-business-report-digital-website-template-backdrop.jpg'
+import black from '../Home/sep09.jpg'
 
-const Home = () => {
+
+
+
+const Home = ({state}) => {
+console.log(state);
     return (
-        <div  className='block'>
+        <div  className='block' style={{backgroundImage: `url(${state})`}}>
             <div className='block-about'>
-            <div className='block__name'><p>Lansarov Said</p></div>
+            <div className='block__name'><p>Лансаров Саид</p></div>
             <div className='block__photo'>
                 <img src={me} alt="" />
             <div className='block__info'>
