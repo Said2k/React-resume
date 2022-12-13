@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.block {
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(./abstract-uv-ultraviolet-light-composition.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 110%;
+}
+.block-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    width: 90%;
+    height: 800px;
+    margin-top: 100px;
+    position: absolute;
+
+    /* border: 1px solid black; */
+    /* background-color: #fff;
+    box-shadow: 0 5px 5px 5px gray;  */
+
+}
+
+.block__name {
+    display: flex;
+    justify-content: center;
+border-radius: 20px;
+width: 50%;
+background-color: #fff;
+box-shadow: 0 5px 5px 5px gray;
+font-size: 35px; 
+font-weight: 500;
+
+}
+.block__photo{
+   
+    margin-top: 30px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 30px;
+    width: 100%;
+    height: 600px;
+    background-color: #fff;
+    box-shadow: 0 5px 5px 5px gray; 
+}
+.block__photo img {
+    border-radius: 20px;
+    width: 35%;
+    box-shadow: 0 5px 5px 5px gray; 
+    height: 500px
+   
+
+}
+.block__info{
+    margin-top: 30px;
+    padding: 20px 0;
+    /* display: flex;
+    justify-content: center; */
+    border-radius: 20px;
+    width: 30%;
+    height: 80%;
+    background-color: #fff;
+    box-shadow: 0 5px 5px 5px gray; 
+  
+}
+.block__info div {
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    margin-top: 80px;
+}
+.block__info p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.block__info span {
+    text-align: center;
+
+}
+

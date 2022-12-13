@@ -1,0 +1,21 @@
+.block__footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #27282c;
+    width: 100%;
+    height: 200px;
+   
+}
+.block__footer p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+.block__footer-web {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
